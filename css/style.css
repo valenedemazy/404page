@@ -1,0 +1,145 @@
+
+
+@font-face {
+
+    font-family:'The Amazing Spider-Man.ttf' ;
+    src: url("../police/The Amazing Spider-Man.ttf");
+    src: url("../police/The Amazing Spider-Man.ttf") format('truetype');
+    font-weight:normal;
+    font-style: normal;
+
+
+}
+@font-face {
+
+    font-family:'caricature.ttf' ;
+    src: url("../police/caricature.ttf");
+    src: url("../police/caricature.ttf") format('truetype');
+    font-weight:normal;
+    font-style: normal;
+
+}
+
+/*configuration body grid*/
+
+body{
+    position: relative;
+    display: grid;
+    grid-template-rows: 3;
+    background-image: url("https://simplecore.intel.com/itpeernetwork/wp-content/uploads/sites/38/2018/02/Smart-City-Network-Image.png");
+    
+    overflow-x: hidden;
+    
+}
+
+
+/*configuration titre 404*/
+h1{ 
+    
+    color: red;
+    font-size: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+      
+ }
+
+
+/*configuration titre "wall not fond"*/
+h2{
+     font-family: 'The Amazing Spider-Man.ttf';
+     display: flex;
+    justify-content: center;
+     color: red;
+     font-size: 100px;
+     margin: 0;
+}
+
+.allpics{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.spiderman {
+  position: absolute;
+  right: -20vw;
+  width: 160px;
+  height: 180px;
+  animation: slidein 20s linear 0s infinite forwards;
+  display: inline-block;
+  background: url("../image/yper_spiderman11.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*animation gif css*/
+  
+  @keyframes slidein {
+    0% {
+      background-image: url("../image/yper_spiderman11.gif");
+      right: -20vw;
+    }
+
+    24%{
+      background-image: url("../image/yper_spiderman11.gif");
+      right: 120vw;
+    }
+
+    24.1%{
+      right: -20vw;
+      background-image: none;
+    }
+
+    25%{
+      right: -20vw;
+      background-image: url("../image/yper_spiderman09.gif");
+    }
+
+    50%{
+      right: 120vw;
+      background-image: url("../image/yper_spiderman09.gif");
+    }
+
+    50.1%{
+      right: -20vw;
+      background-image: none;
+    }
+
+    51%{
+      right: -20vw;
+      background-image: url("../image/yper_spiderman04.gif");
+    }
+
+   75%{
+      right: 120vw;
+      background-image: url("../image/yper_spiderman04.gif");
+    }
+
+    75.1%{
+      right: -20vw;
+      background-image: none;
+    }
+
+    76%{
+      right: -20vw;
+      background-image: url("../image/yper_spiderman03.gif");
+    }
+  
+    100% {
+      background-image: url("../image/yper_spiderman03.gif");
+      right: 120vw;
+    }
+  }
+
+  /*effet scale 3d*/
+    .bigspider{
+
+
+
+  }
